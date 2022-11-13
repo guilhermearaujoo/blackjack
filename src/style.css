@@ -9,17 +9,16 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  flex-direction: column;
   overflow: hidden;
+  width: 100vw;
 }
 
 .top {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
   height: 220px;
   border: 5px solid white;
   padding: 0 50px;
@@ -90,6 +89,7 @@ player-1.score {
 }
 
 h1 {
+  text-align: center;
   margin-top: 20px;
   color: #fff;
   font-size: 50px;
@@ -101,7 +101,7 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 600px;
+  height: 400px;
 }
 
 .buttons {
@@ -191,24 +191,24 @@ h1 {
 
 @media screen and (min-width: 700px) {
   .top {
-    width: 700px;
+    width: 600px;
     justify-content: space-evenly;
   }
 
   .score {
-    margin-top: 50px;
+    margin-top: 30px;
     height: 60px;
     width: 100px;
   }
 
   .center {
-    align-items: center;
     justify-content: center;
   }
 
   .buttons {
     width: 300px;
     margin-top: 20px;
+    margin-bottom: 50px;
     justify-content: space-evenly;
   }
 
@@ -219,12 +219,5 @@ h1 {
   .gameBtn {
     width: 60px;
     height: 60px;
-  }
-
-  .result {
-    margin-top: 20px;
-    width: 60px;
-    height: 70px;
-    margin-bottom: 40px;
   }
 }

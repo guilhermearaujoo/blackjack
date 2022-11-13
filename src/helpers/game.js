@@ -23,7 +23,6 @@ function restartGame() {
   document.querySelector('.player-2.score').textContent = 0;
   document.querySelector('.player-1.cards').textContent = '';
   document.querySelector('.player-2.cards').textContent = '';
-  document.querySelector('.result').classList.add('hidden');
 }
 
 export async function startNewGame() {
@@ -57,23 +56,17 @@ function addCardToPlayer(card, player) {
 }
 
 function showResult(result) {
-  const resultElement = document.querySelector('.result');
   if (result === 'win') {
-    resultElement.src = './src/imgs/win.png';
     Swal.fire({
       icon: 'success',
       title: 'You Won',
-      timer: 1500,
     });
   } else {
-    resultElement.src = './src/imgs/lose.png';
     Swal.fire({
       icon: 'error',
       title: 'You Lost',
-      timer: 1500,
     });
   }
-  resultElement.classList.remove('hidden');
 }
 
 async function dealerTurn() {
