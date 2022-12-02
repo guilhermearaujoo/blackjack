@@ -5,7 +5,7 @@
   </a>
 </p>
 
-> ⚙️ A blackjack game, with simple rules using Sweet Alert and JS, see it here [blackjack]()
+> ⚙️ A blackjack game, with simple rules using Sweet Alert and JS, see it here [blackjack](https://my-own-blackjack.surge.sh)
 
 ## Author
 
